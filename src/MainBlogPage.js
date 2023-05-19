@@ -45,9 +45,9 @@ const handleedit=(post,index)=>{
   return (
 
     <div className='main '>
-      <div className=' p-10 flex justify-center items-center gap-10 border-b-2 border-black'>
-      <span className=' font-semibold '>What's do you want to post:</span>
-      <input type="text" required value={newpost} className='border-2 p-2 border-black ' onChange={handlenewpost}/>
+      <div className=' w-1/2 m-auto p-5 flex flex-col justify-center items-center text-center gap-5 sm:w-screen p-10 flex justify-center items-center gap-10 border-b-2 border-black'>
+      <span className=' font-semibold '>What's do You Want to Post :</span>
+      <input type="text" required value={newpost} className=' text-center border-2 p-2 border-black ' onChange={handlenewpost}/>
       <input type="file" ref={inputreference} onChange={handleimage}/>
       <button className='border-2 border-blue-400 font-serif tracking-1 hover:bg-blue-200 w-20 text-center' onClick={handlesubmit}>Post</button>
       </div>
